@@ -1,0 +1,31 @@
+.row div {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    background-image: url('buttons/gradient.png');
+    font-size: 3.5em;
+    font-family: sans-serif;
+    text-align: center;
+}
+.row div.wide {
+    width: 156px;
+    background-image: url('buttons/horizontal.png');
+}
+.row div.tall {
+    height: 156px;
+    background-image: url('buttons/vertical.png');
+}
+
+.row div.pressed {
+    color: #ADD;
+}
+
+.row {
+    margin-top: 4px;
+    height:75px;
+}
+body {
+    background-color: black;
+    margin: 0;
+    color: white;
+}
