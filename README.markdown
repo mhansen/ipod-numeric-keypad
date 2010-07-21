@@ -1,8 +1,14 @@
-I needed a numeric keypad for some software, so I made a touchscreen remote control numeric keypad for my iPhone.
+<table><tr><td>
+<h1>Mobile Numeric Keypad</h1>
+<p>I needed a numeric keypad for some software, so I made a touchscreen remote control numeric keypad for my iPhone.</p>
 
-There's software that already does this (NumberKey) but this doesn't have a client software for *nix.
+<p>There's software that already does this (NumberKey) but this doesn't have a client software for *nix.</p>
 
-This runs on ruby/sinatra, serving up some HTML showing a numeric keypad for the iPhone
+<p>This runs on ruby/sinatra, serving up some HTML showing a numeric keypad for the iPhone.</p>
+</td>
+<td>
+<img src='http://i.imgur.com/8tWqW.png' style='float:right'>
+</td></tr></table>
 
 Prerequisites
 =============
