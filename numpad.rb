@@ -19,7 +19,8 @@ post '/press/:key' do
     system("xdotool key #{keysym}")
 end
 
-# xdotool takes KeySyms from /usr/include/X11/keysymdef.h (sans the XK_ prefix)
+# keycode reference is at /usr/include/X11/keysymdef.h
+# all of these are keypad events, so they start with 'KP_'
 keysyms = {
     'zero' => 'KP_0',
     'one' => 'KP_1',
