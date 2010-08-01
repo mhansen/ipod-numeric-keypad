@@ -1,12 +1,22 @@
+#!/usr/bin/env ruby
 require 'rubygems'
 require 'sinatra'
 
 configure do
+    # make haml compile to html5 
     set :haml, :format => :html5
 end
 
 get '/' do
+    # compile views/index.haml 
     haml :index
+end
+
+post '/press/:key' do
+    # get the keycode for the numberpad key
+    keysym = keysyms[params[:key]]
+    # invoke xdotool to send the keypress to the active window
+    system("xdotool key #{keysym}")
 end
 
 # xdotool takes KeySyms from /usr/include/X11/keysymdef.h (sans the XK_ prefix)
@@ -30,8 +40,3 @@ keysyms = {
     'decimal' => 'KP_Decimal',
     'enter' => 'KP_Enter'
 }
-
-post '/press/:key' do
-    keysym = keysyms[params[:key]]
-    system("xdotool key #{keysym}")
-end
