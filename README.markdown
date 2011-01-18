@@ -15,7 +15,7 @@ Prerequisites
 
 - sinatra `gem install sinatra`
 - haml `gem install haml`
-- xdotool `sudo apt-get install xdotool` or `sudo port install xdotool` if on Mac. Requires <a href="http://www.macports.org/">MacPorts</a>
+- xdotool `sudo apt-get install xdotool` (`sudo port install xdotool` if on Mac. Requires <a href="http://www.macports.org/">MacPorts</a>)
 
 When you tap buttons, HTTP requests are made back to sinatra, which invokes xdotool to send the corresponding X event to the active window.
 
